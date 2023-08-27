@@ -1,8 +1,9 @@
 body {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
+  line-height: 1.4;
   color: seashell;
-  background-color: black;
+  background: black;
   opacity: 0.9;
   text-align: center;
 }
@@ -10,11 +11,13 @@ body {
 header {
   height: 69px;
   border-bottom: 1px solid seashell;
+  background: black;
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,11 +33,31 @@ ul {
   gap: 20px;
 }
 
-li {
-  text-decoration: underline;
+a {
+  color: seashell;
 }
 
-li:hover {
+a:hover {
   color: khaki;
   text-decoration: none;
+}
+
+main {
+  position: relative;
+  top: 69px;
+}
+
+.background {
+  width: 1200px;
+  height: 700px;
+  background-image: url("../assets/images/mission.jpg");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background section {
+  width: 100%;
+  background: black;
 }
