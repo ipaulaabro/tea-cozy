@@ -43,12 +43,13 @@ a:hover {
 }
 
 main {
+  width: 1200px;
+  margin: 0 auto;
   position: relative;
   top: 69px;
 }
 
-.background {
-  width: 1200px;
+#mission {
   height: 700px;
   background-image: url("../assets/images/mission.jpg");
 
@@ -57,7 +58,33 @@ main {
   align-items: center;
 }
 
-.background section {
+#mission div {
   width: 100%;
   background: black;
+}
+
+#mission p {
+  font-weight: bold;
+}
+
+#feature {
+  width: 1000px;
+  margin: 60px auto;
+}
+
+#feature div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+#feature img {
+  width: 300px;
+  height: 200px;
+}
+
+figcaption {
+  font-weight: bold;
+  margin-top: 10px;
 }
